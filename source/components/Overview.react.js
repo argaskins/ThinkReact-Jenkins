@@ -4,7 +4,17 @@ const Row = require('react-bootstrap/lib/row');
 const Col = require('react-bootstrap/lib/Col');
 const logs = require('../utilities/logsMixin');
 
-const <NAME> = React.createClass({
+const ovStyle={
+  color:"grey"
+
+};
+
+const mytext = "Aqua boogie baby, never learned to swim \
+Underwater boogie baby, can't catch the rhythm of the stroke \
+Aqua boogie baby, why should I hold my breath \
+Underwater boogie baby, feelin' that I might choke";
+
+const Overview = React.createClass({
 
 //-------default API------------------
 
@@ -18,7 +28,7 @@ const <NAME> = React.createClass({
 
 render: function() {
   return (
-    <div>TEMPLATE</div>
+    <p style={ovStyle}> {mytext}</p>
   )
 
 },
@@ -26,4 +36,4 @@ render: function() {
 // compoentWillUnmount: function(){}
 });
 
-module.exports = <NAME>
+module.exports = Overview

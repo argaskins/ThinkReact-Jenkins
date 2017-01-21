@@ -2,6 +2,11 @@ var React = require('react');
 var logs = require("../utilities/logsMixin.js")
 const Section = require('./Section.react.js');
 const Banner = require('./Banner.react.js');
+const Overview = require('./Overview.react.js');
+// const header = require('./textHeader.react.js');  //Stateless (Static) component.  Thats why it's lowercase.
+const Bullets = require('./Bullets.react.js');
+const Header = require('./Header.react.js');
+const Images = require('./Images.react.js');
 // Same as import React from 'react'
 
 const Application = React.createClass({
@@ -11,12 +16,21 @@ const Application = React.createClass({
 
     render: function() {
         return (
-            <div class='container-fluid'>
+            <div className='container-fluid'>
                 <Banner></Banner>
-                <Section>1</Section>
-                <Section>2</Section>
-                <Section>3</Section>
-                <Section>4</Section>
+                <Section>
+                  <Header>Overview</Header>
+                    <Overview />
+                </Section>
+                <Section>
+                  <Header>Bullets</Header>
+                  <Bullets />
+                </Section>
+                <Section>
+                  <Header>Photos</Header>
+                    <Images />
+                </Section>
+                <Section><Header>Tweets</Header></Section>
             </div>
         );
     }

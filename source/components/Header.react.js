@@ -3,8 +3,12 @@ const React = require('react');
 const Row = require('react-bootstrap/lib/row');
 const Col = require('react-bootstrap/lib/Col');
 const logs = require('../utilities/logsMixin');
+const headerStyle={
+  color:"blue"
 
-const <NAME> = React.createClass({
+}
+
+const Header = React.createClass({
 
 //-------default API------------------
 
@@ -18,7 +22,7 @@ const <NAME> = React.createClass({
 
 render: function() {
   return (
-    <div>TEMPLATE</div>
+    <h2 style={headerStyle}> {this.props.children}</h2>
   )
 
 },
@@ -26,4 +30,4 @@ render: function() {
 // compoentWillUnmount: function(){}
 });
 
-module.exports = <NAME>
+module.exports = Header

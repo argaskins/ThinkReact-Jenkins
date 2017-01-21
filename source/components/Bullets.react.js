@@ -4,7 +4,9 @@ const Row = require('react-bootstrap/lib/row');
 const Col = require('react-bootstrap/lib/Col');
 const logs = require('../utilities/logsMixin');
 
-const <NAME> = React.createClass({
+var bulletsArray = ["One Mississippi", "Two Mississippi", "Three Mississippi", "Four Mississippi"]
+
+const Bullets = React.createClass({
 
 //-------default API------------------
 
@@ -17,8 +19,22 @@ const <NAME> = React.createClass({
 // componentWillUpdate: function(){},
 
 render: function() {
+  var bull;
+
+  if (bulletsArray.length > 0) {
+    bull = bulletsArray.map(function(val, idx){
+      return (
+        <Row key={idx}><Col xs={12}>~{val}</Col></Row>
+      )
+    })
+  }
+
   return (
-    <div>TEMPLATE</div>
+    <div>
+      <Row>
+        {bull}
+      </Row>
+  </div>
   )
 
 },
@@ -26,4 +42,4 @@ render: function() {
 // compoentWillUnmount: function(){}
 });
 
-module.exports = <NAME>
+module.exports = Bullets
