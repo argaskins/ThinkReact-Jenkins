@@ -1,5 +1,5 @@
 var React = require('react');
-var log = require("../utilities/logsMixin.js")
+var logs = require("../utilities/logsMixin.js")
 const Section = require('./Section.react.js');
 const Banner = require('./Banner.react.js');
 // Same as import React from 'react'
@@ -7,11 +7,11 @@ const Banner = require('./Banner.react.js');
 const Application = React.createClass({
 
     name: "Application",
-    mixins: [log],
+    mixins: [logs],
 
     render: function() {
         return (
-            <div>
+            <div class='container-fluid'>
                 <Banner></Banner>
                 <Section>1</Section>
                 <Section>2</Section>

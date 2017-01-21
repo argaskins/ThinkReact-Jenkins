@@ -1,4 +1,14 @@
 const React = require('react');
+const logs = require('../utilities/logsMixin');
+const Row = require('react-bootstrap/lib/Row');
+const Col = require('react-bootstrap/lib/Col');
+
+const bannerStyle={
+  backgroundColor:"#333",
+  height: "400px",
+  width: "100%"
+
+}
 const Banner  = React.createClass({
 
   name: "Section",
@@ -19,7 +29,9 @@ const Banner  = React.createClass({
 
 render: function() {
   return (
-    <div>Banner</div>
+    <Row style={bannerStyle}>
+
+    </Row>
   )
 
 },

@@ -1,4 +1,8 @@
 const React = require('react');
+
+const Row = require('react-bootstrap/lib/row');
+const Col = require('react-bootstrap/lib/Col');
+
 const <NAME> = React.createClass({
 
 //-------default API------------------
