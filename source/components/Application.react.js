@@ -7,12 +7,13 @@ const Overview = require('./Overview.react.js');
 const Bullets = require('./Bullets.react.js');
 const Header = require('./Header.react.js');
 const Images = require('./Images.react.js');
+const Tweets = require('./Tweets.react.js')
 // Same as import React from 'react'
 
 const Application = React.createClass({
 
     name: "Application",
-    mixins: [logs],
+  //  mixins: [logs],
 
     render: function() {
         return (
@@ -30,7 +31,10 @@ const Application = React.createClass({
                   <Header>Photos</Header>
                     <Images />
                 </Section>
-                <Section><Header>Tweets</Header></Section>
+                <Section>
+                  <Header>Tweets</Header>
+                  <Tweets />
+                </Section>
             </div>
         );
     }

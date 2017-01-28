@@ -13,7 +13,20 @@ var server = function() {
       res.setHeader('Content-Type', 'text/html');
       res.send(fs.readFileSync('./views/index.html'));
     };
+
+    self.routes['/tweets'] = function(req, res){
+
+      var tweets = [];
+      tweets.push({date:"today", text:"I love tweets", user:"@jwesleye"});
+      tweets.push({date:"yesterday", text:"I Like tweets", user:"@jwesleye"});
+      tweets.push({date:"tomorrow", text:"All work and no play makes Jack a dull boy", user:"@jwesleye"});
+
+      res.jsonp({"tweets": tweets});
+    };
+
+
   };
+////---------
 
   self.initializeServer = function() {
     self.createRoutes();

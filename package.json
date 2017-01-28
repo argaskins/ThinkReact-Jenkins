@@ -20,9 +20,12 @@
   "homepage": "https://github.com/argaskins/ThinkReact-Jenkins#readme",
   "dependencies": {
     "express": "^4.14.0",
+    "flux": "^3.1.2",
     "forever": "^0.15.3",
     "forever-monitor": "^1.7.1",
     "fs": "0.0.1-security",
+    "keymirror": "^0.1.1",
+    "object-assign": "^4.1.1",
     "path": "^0.12.7",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.7",

@@ -18,7 +18,7 @@ const imageStyle ={
 const Banner  = React.createClass({
 
   name: "Section",
-  mixins: [logs],
+  // mixins: [logs],
   propTypes:{
     title:React.PropTypes.string,
     children: React.PropTypes.node //node is a placeholder and can take any type of variable
