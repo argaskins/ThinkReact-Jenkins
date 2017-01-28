@@ -22,9 +22,9 @@ componentDidMount: function(){
 componentWillReceiveProps: function(){
   this.log('componentDidMount', arguments);
 },
-shouldComponentUpdate: function(){
-  this.log('shouldComponentUpdate', arguments);
-},
+// shouldComponentUpdate: function(){
+  // this.log('shouldComponentUpdate', arguments);
+// },
 componentWillUpdate: function(){
   this.log('componentWillUpdate', arguments);
 },
